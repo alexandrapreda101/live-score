@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "910334354085",
+    "project_id": "proiect-goldiggers",
+    "storage_bucket": "proiect-goldiggers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910334354085:android:13dca62c65ee7b80fde34c",
+        "android_client_info": {
+          "package_name": "com.example.proiectandroidgoldigger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910334354085-aem5af0jl030l9stpimjaqpcknnb6d3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrdXEJFXTVL6SmZ0BbXAxYuoBGZnwkrWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910334354085-aem5af0jl030l9stpimjaqpcknnb6d3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

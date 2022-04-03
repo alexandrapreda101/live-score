@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="button_one">
+        <item name="android:background">@drawable/button_one_bg_color</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:buttonCornerRadius">2px</item>
+    </style>
+    <style name="button_two">
+        <item name="android:background">@drawable/button_one_bg_color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:buttonCornerRadius">2px</item>
+    </style>
+</resources>

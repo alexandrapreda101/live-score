@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSettings">
+    <include
+        android:id="@+id/mytoolbar"
+        layout="@layout/mytoolbar"/>
+
+    <TextView
+        android:id="@+id/enableDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/enable_dark_mode"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/editfullnametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/enter_full_name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/switch_dark_mode"
+        app:layout_constraintTop_toBottomOf="@+id/switch_dark_mode" />
+
+    <Switch
+        android:id="@+id/switch_dark_mode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/dark_mode"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/enableDarkMode"
+        app:layout_constraintTop_toBottomOf="@+id/enableDarkMode"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editfullnametv"
+        app:layout_constraintTop_toBottomOf="@+id/editfullnametv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/FullName"
+            android:layout_width="229dp"
+            android:layout_height="50dp"
+            android:drawablePadding="12dp"
+            android:hint="@string/full_name"
+            android:paddingStart="12dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingLeft="12dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/save"
+        style="@style/button_two"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_two"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout5"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout5" />
+
+    <TextView
+        android:id="@+id/userFullNametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/nume_utilizator"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mytoolbar" />
+
+    <ImageView
+        android:id="@+id/soccerplayer"
+        android:layout_width="151dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/soccerplayer"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userFullNametv"
+        app:srcCompat="@drawable/player" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="391dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soccerplayer">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_1"
+            android:textColor="@color/blue" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_2"
+            android:textColor="@color/blue" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_3"
+            android:textColor="@color/blue" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

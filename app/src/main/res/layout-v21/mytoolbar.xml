@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/darkish_blue"
+    android:elevation="4dp"
+    app:titleTextColor="@color/white">
+
+    <TextView
+        android:id="@+id/tvlivescore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/live"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvlivescore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:text="@string/score"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/icon_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/person_icon"
+            android:contentDescription="@string/imagineprofiltoolbar" />
+
+
+        <ImageButton
+            android:id="@+id/icon_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15sp"
+            android:background="@drawable/ic_baseline_home_24"
+            android:contentDescription="@string/imaginehometoolbar" />
+
+        <ImageButton
+            android:id="@+id/icon_clasament"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:background="@drawable/clasament"
+            android:contentDescription="@string/imagineclasamenttoolbar" />
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.Toolbar>
